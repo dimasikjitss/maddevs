@@ -134,7 +134,6 @@ CELERY_RESULT_BACKEND = config('REDIS_URL')+'/0'
 CELERYBEAT_SCHEDULE = {
     'get_posts': {
         'task': 'get_posts',
-        'schedule': timedelta(hours=24),
-        'args': ()
-    }
+        'schedule': timedelta(seconds=2),
+            }
 }
