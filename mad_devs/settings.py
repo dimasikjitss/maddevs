@@ -135,5 +135,5 @@ CELERYBEAT_SCHEDULE = {
     'get_posts': {
         'task': 'get_posts',
         'schedule': timedelta(seconds=2),
-            }
+    }
 }
